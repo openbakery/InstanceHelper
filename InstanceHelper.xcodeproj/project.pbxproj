@@ -76,10 +76,8 @@
 		A73FEEB627EC7B6500B56ED8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A73FEEC327EC7BBF00B56ED8 /* InstanceHelper.swift */,
-				A73FEEBF27EC7BAB00B56ED8 /* OBInstanceHelper.h */,
-				A73FEEC027EC7BAB00B56ED8 /* OBInstanceHelper.m */,
-				A73FEEB727EC7B6500B56ED8 /* InstanceHelper.h */,
+				A73FEEF427EC8D2900B56ED8 /* ObjectiveC */,
+				A73FEEF527EC8D3500B56ED8 /* Swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -100,6 +98,24 @@
 				A73FEED427EC7D0B00B56ED8 /* SceneDelegate.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		A73FEEF427EC8D2900B56ED8 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				A73FEEBF27EC7BAB00B56ED8 /* OBInstanceHelper.h */,
+				A73FEEC027EC7BAB00B56ED8 /* OBInstanceHelper.m */,
+				A73FEEB727EC7B6500B56ED8 /* InstanceHelper.h */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		A73FEEF527EC8D3500B56ED8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A73FEEC327EC7BBF00B56ED8 /* InstanceHelper.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
