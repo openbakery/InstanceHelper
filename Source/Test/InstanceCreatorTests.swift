@@ -8,13 +8,13 @@
 import XCTest
 @testable import InstanceHelper
 
-class InstanceHelperTests: XCTestCase {
+class InstanceCreatorTests: XCTestCase {
 	
 	
 	
 	func createScene() throws -> UIWindowScene {
-		let session = try InstanceHelper.create(UISceneSession.self)
-		let scene = try InstanceHelper.create(UIWindowScene.self, properties: [
+		let session = try InstanceCreator.create(UISceneSession.self)
+		let scene = try InstanceCreator.create(UIWindowScene.self, properties: [
 			"session": session
 		])
 		return scene
@@ -24,7 +24,7 @@ class InstanceHelperTests: XCTestCase {
 		// given
 		let sceneDelegate = SceneDelegate()
 		let scene = try createScene()
-		let options = try InstanceHelper.create(UIScene.ConnectionOptions.self)
+		let options = try InstanceCreator.create(UIScene.ConnectionOptions.self)
 		// when
 		sceneDelegate.scene(scene, willConnectTo: scene.session, options: options)
 		// then
