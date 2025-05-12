@@ -60,4 +60,4 @@ mkdir build/xcframework
 
 cd $ARCHIVE_DIRECTORY
 
-zip -r ../xcframework/$NAME-$VERSION.zip $NAME.xcframework LICENSE
+zip -r ../xcframework/$NAME-$VERSION.xcframework.zip $NAME.xcframework LICENSE
