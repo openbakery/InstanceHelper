@@ -10,17 +10,16 @@ let package = Package(
         .library(name: "InstanceHelperObjectiveC", targets: ["InstanceHelperObjectiveC"]),
         .library(name: "InstanceHelper", targets: ["InstanceHelper"]),
     ],
-    dependencies: [
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "InstanceHelperObjectiveC",
             path: "Source/Main",
             exclude: [
-                "Swift",
+                "Swift"
             ],
             sources: [
-                "ObjectiveC",
+                "ObjectiveC"
             ]
         ),
         .target(
@@ -30,14 +29,14 @@ let package = Package(
             ],
             path: "Source/Main",
             exclude: [
-                "ObjectiveC",
+                "ObjectiveC"
             ],
             sources: [
-                "Swift",
+                "Swift"
             ],
             publicHeadersPath: "include",
             cSettings: [
-                CSetting.headerSearchPath("ObjectiveC"),
+                CSetting.headerSearchPath("ObjectiveC")
             ]
         ),
     ]
